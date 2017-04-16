@@ -6,4 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  recipeVisibile = true;
+  shoppingListVisible = false;
+
+  onRecipeShown(): void{
+    this.recipeVisibile = true;
+    this.shoppingListVisible = false;
+  }
+
+  onShoppingListShown(): void{
+    this.recipeVisibile = false;
+    this.shoppingListVisible = true;
+  }
 }

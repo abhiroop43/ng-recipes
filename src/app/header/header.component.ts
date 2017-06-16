@@ -1,24 +1,11 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
-  @Output() recipeShown = new EventEmitter<{}>();
-  @Output() shoppingListShown = new EventEmitter<{}>();
-  constructor() { }
+export class HeaderComponent {
 
-  ngOnInit() {
-  }
-
-  showRecipes() {
-    this.recipeShown.emit({});
-  }
-
-  showShoppingList() {
-    this.shoppingListShown.emit({});
-  }
 
 }
